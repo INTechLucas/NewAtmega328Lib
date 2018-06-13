@@ -1,0 +1,16 @@
+.pioenvs
+.piolibdeps
+.travis.yml
+CMakeListsPrivate.txt
+CMakeLists.txt
+cmake-build-debug/
+
+.idea/
+.idea/clion.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/platformio.iml
+.idea/watcherTasks.xml
+.idea/workspace.xml
+.idea/codeStyles/Project.xml
+.idea/vcs.xml
