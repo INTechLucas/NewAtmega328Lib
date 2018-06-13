@@ -2,15 +2,20 @@
 // Created by elektron on 13/06/18.
 //
 
-#include <Arduino.h>
+//#include <Arduino.h>
 
-void setup() {
-    pinMode(13, OUTPUT);
-}
+#include <util/delay.h>
+#include "Gpio/PortB.h"
 
-void loop() {
-    digitalWrite(13, HIGH);
-    delay(100);
-    digitalWrite(13, LOW);
-    delay(100);
+PortB portb;
+
+int main() {
+    portb.setModeOutput(5);
+
+    for(;;) {
+        portb.setOff(5);
+        _delay_ms(100);
+        portb.setOn(5);
+        _delay_ms(100);
+    }
 }
