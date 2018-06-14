@@ -3,14 +3,12 @@
 //
 
 #include "PortB.h"
-#include <avr/io.h>
-
 
 PortB::PortB() {
 
 }
 
-void PortB::setModeOutput(int pin){
+void PortB::setOutputMode(int pin){
     DDRB = DDRB | (1u << pin);
 }
 

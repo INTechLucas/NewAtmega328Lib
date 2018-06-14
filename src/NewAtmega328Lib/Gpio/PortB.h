@@ -13,11 +13,10 @@
 class PortB {
 public:
     PortB();
-    void setMode(int pin, bool mode);
     void setOn(int pin);
     void setOff(int pin);
 
-    void setModeOutput(int pin);
+    void setOutputMode(int pin);
 };
 
 
