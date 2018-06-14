@@ -12,7 +12,6 @@ int main() {
     for(;;) {
         portb.setOn(5);
         _delay_ms(500);
-        /*_delay_ms(100);*/
         portb.setOff(5);
         _delay_ms(100);
     }
